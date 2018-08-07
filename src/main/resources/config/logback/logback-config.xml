@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <appender name="ConsoleOut" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>%d{yyyy:MM:dd HH:mm:ss} %-5level --- [%thread] %logger{35} : %msg %n</pattern>
+        </encoder>
+    </appender>
+	
+	<logger name="org.springframework.web" level="DEBUG"/>
+    <logger name="springfox.documentation" level="OFF"  />
+	<logger name="jdbc"                    level="OFF"  />
+	<logger name="jdbc.sqlonly"            level="INFO" />
+	<logger name="jdbc.sqltiming"          level="OFF"  />
+    <logger name="jdbc.audit"              level="OFF"  />
+    <logger name="jdbc.connection"         level="OFF"  />
+	<logger name="jdbc.resultset"          level="OFF"  />
+	<logger name="jdbc.resultsettable"     level="OFF"  />
+	
+	<logger name="org.springframework.client"              level="OFF" />
+	<logger name="org.springframework.jndi"                level="OFF" />
+	<logger name="org.springframework.web.servlet.mvc"     level="OFF" />
+	<logger name="org.springframework.web.servlet.view"    level="OFF" />
+	<logger name="org.springframework.web.servlet.handler" level="OFF" />
+	
+    <root level="INFO">
+        <appender-ref ref="ConsoleOut" />
+    </root>
+    
+</configuration>
