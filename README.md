@@ -1,4 +1,4 @@
-스프링 데이터 Auditing (시스템컬럼)
+Spring Data Auditing (시스템컬럼)
 하이버네이트 Envers (이력관리)
 Hot deploy < spring-boot-devtools
 QueryDSL
