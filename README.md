@@ -1,10 +1,3 @@
-Spring Data Auditing (시스템컬럼)
-하이버네이트 Envers (이력관리)
-Hot deploy < spring-boot-devtools
-QueryDSL
-GraphQL test
-DDD, Event
-
 # 엔티티
 * User : 회원
   MyVisitStore : 나의 상점 리스트(내가 방문한 상점)
